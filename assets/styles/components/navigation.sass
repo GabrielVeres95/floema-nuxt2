@@ -1,0 +1,33 @@
+.navigation 
+  @extend %cover
+
+  color: $white
+  position: fixed
+  z-index: 8
+  pointer-events: none
+
+.navigation__link
+  position: absolute
+  top: 4rem
+  left: 4rem
+  height: 2rem
+  width: 12.8rem
+  pointer-events: auto
+  
+  @media(max-width: $phone)
+    left: 5rem
+    top: 5rem
+    width: 27.9rem
+    height: 4.3rem
+
+.navigation__link__icon 
+  display: block
+
+.navigation__list__item
+  position: absolute
+  right: 4rem
+  top: 4rem
+  pointer-events: auto
+
+.navigation__list__link
+  @extend %title-20

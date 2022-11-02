@@ -1,0 +1,137 @@
+.detail 
+  @extend %cover
+  @extend %center
+
+  background: $quicksand
+  color: $white
+
+  @media(max-width: $phone)
+    height: auto
+
+.detail__wrapper 
+  display: flex
+  align-items: center
+
+  @media(max-width: $phone)
+    display: block
+    width: 66.1rem
+    margin: auto
+    padding: 15rem 0 31.5rem
+
+.detail__media
+  width: 55.4rem
+  height: 78.2rem
+  position: relative
+
+  @media(max-width: $phone)
+    margin: 0 auto 7.8rem
+    height: 93.4rem
+    width: 100%
+
+.details__media__image
+  @extend %cover
+
+  object-fit: cover
+
+.detail__information
+  padding-left: 8rem
+
+  @media(max-width: $phone)
+    padding-left: 0
+
+.detail__information__collection 
+  @extend %description-12
+
+  text-transform: uppercase
+  margin-bottom: 3.7rem 
+
+.detail__information__title 
+  @extend %title-120
+
+  max-width: 60rem
+
+.detail__information__content
+  padding-left: 18rem
+
+
+  @media(max-width: $phone)
+    padding-left: 0
+
+.detail__information__highlights
+  margin-top: 6rem
+
+.detail__information__highlight
+  display: flex
+  align-items: center
+  
+  &:not(:first-child)
+    margin-top: 4rem
+
+.detail__information__highlight__icon
+  height: 4rem
+  width: 4rem
+  margin-right: 3.75rem
+
+  @media(max-width: $phone)
+    height: 9.2rem
+    width: 9.2rem
+    margin-right: 5.8rem
+
+.detail__information__highlight__text
+  @extend %description-16
+
+
+.detail__information__list
+  margin-top: 4rem
+
+.detail__information__item
+  display: flex
+
+  &:not(:first-child)
+    margin-top: 4rem
+
+.detail__information__item__title 
+  @extend %description-12
+  
+  padding-right: 2rem
+  width: 10rem
+
+  @media(max-width: $phone)
+    width: 15rem
+
+.detail__information__item__description
+  @extend %description-16
+
+  max-width: 44rem
+
+.detail__information__link
+  @extend %title-30
+
+  display: inline-block
+  margin-top: 3rem
+
+.detail__button
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  bottom: 7.3rem
+  left: 50%
+  transform: translateX(-50%)
+  width: 12.4rem
+  height: 6rem
+  text-transform: uppercase
+  
+  @media(max-width: $phone)
+    width: 26.8rem
+    height: 13rem
+    font-size: 3rem
+
+.detail__button__icon
+  @extend %cover
+
+
+
+
+
+

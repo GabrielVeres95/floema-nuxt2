@@ -1,0 +1,75 @@
+.home 
+  @extend %center
+  @extend %cover
+
+  background: $peach
+  color: $white
+  text-align: center
+  overflow: hidden
+
+  &:before, &:after
+    content: ''
+    height: 24rem
+    left: 0
+    position: absolute
+    width: 100%
+    z-index: 1
+
+  &:before
+   background: linear-gradient(to bottom, $peach 0%, rgba($peach, 0) 100%) 
+   top: 0
+  
+  &:after
+   background: linear-gradient(to top, $peach 0%, rgba($peach, 0) 100%) 
+   bottom: 0
+
+.home__titles 
+  @extend %vertical-titles
+
+.home__titles__wrapper
+  @extend %vertical-titles__wrapper
+
+.home__titles__item
+  @extend %vertical-titles__item
+
+.home__titles__label
+  @extend %vertical-titles__label
+
+  font-size: 1.8rem
+
+.home__titles__title
+  @extend %vertical-titles__title
+
+.home__gallery
+  @extend %cover
+
+  visibility: hidden
+
+.home__link
+  align-items: center
+  bottom: 5rem
+  display: flex
+  height: 6rem
+  justify-content: center
+  left: 50%
+  letter-spacing: .05rem
+  position: absolute
+  text-transform: uppercase
+  transform: translateX(-50%)
+  width: 28.8rem
+  z-index: 2
+
+  @media(max-width: $phone)
+    width: 55rem
+    height: 13rem
+    bottom: 7.5rem
+
+.home__link__text 
+  display: inline-block
+  line-height: 1
+  position: relative
+  vertical-align: middle
+
+.home__link__icon
+  @extend %cover
+  
