@@ -197,7 +197,9 @@
 </template>
 
 <script>
+
 export default {
+
     head: { // <-- property used by vue-meta to add header tags
       title: 'About pagina', // <-- For our title tag
       meta: [
@@ -207,7 +209,7 @@ export default {
           content: 'Where you can find all the events taking place in your neighborhood'
         }
       ]
-    },
+    }
   }
 </script>
 

@@ -9,4 +9,3 @@ nav.navigation
 			li.navigation__list__item
 				NuxtLink.navigation__list__link(to="/about") About
 </template>
-	

@@ -53,7 +53,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxt/image'
+    '@nuxt/image',
+    'nuxt-gsap-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -61,6 +62,10 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
+
+  gsap: {
+    /* Module Options */
+  },
 
   image: {
     staticFilename: '[publicPath]/images/[name]-[hash][ext]',
@@ -82,6 +87,8 @@ export default {
       }
     }
   },
+
+  loading: '~/components/LoaderPercent.vue',
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},

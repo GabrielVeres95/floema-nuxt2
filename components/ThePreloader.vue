@@ -8,6 +8,5 @@
     br
     | and thin thread.
 
-  .preloader__number 0%
+  LoaderPercent
 </template>
-  
