@@ -10,7 +10,13 @@
 .preloader__text
   @extend %title-53
 
-  max-width: 66rem
+  max-width: 68rem
+
+  .line-mask
+    overflow: hidden
+
+  .line
+    font-kerning: none
 
 .preloader__number
   @extend %description-14
@@ -19,6 +25,11 @@
   bottom: 7.3rem
   left: 50%
   transform: translateX(-50%)
+  // opacity: 0
 
   @media(max-width: $phone)
     font-size: 2rem
+
+
+
+  

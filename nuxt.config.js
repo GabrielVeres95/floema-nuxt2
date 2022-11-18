@@ -23,7 +23,6 @@ export default {
     link: [
       { rel: "apple-touch-icon", sizes: "180x180", href: "/favicon.png" }, // de completat cu valori reale
       { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon.png" },
-      { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon.png" },
       { rel: "mask-icon", href: "/favicon.png", color: "#ff3a00" },
     ],
 
@@ -54,7 +53,8 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxt/image',
-    'nuxt-gsap-module'
+    'nuxt-gsap-module',
+    'nuxt-font-loader'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -63,8 +63,32 @@ export default {
     '@nuxt/content',
   ],
 
+  fontLoader: {
+    /* module options */
+    url: '~/assets/styles/base/typography.sass'
+  },
+
   gsap: {
     /* Module Options */
+    registerEffect: [
+      {
+        name: 'slideUpMulti',
+        effect: (targets, config) => {
+        }
+      },
+      {
+        name: 'fadeOut',
+        effect: (targets, config) => {
+          // ...
+        }
+      },
+      {
+        name: 'fadeInOut',
+        effect: (targets, config) => {
+          // ...
+        }
+      }
+    ]
   },
 
   image: {
@@ -88,7 +112,7 @@ export default {
     }
   },
 
-  loading: '~/components/LoaderPercent.vue',
+  loading: false,
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
