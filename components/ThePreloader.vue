@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template lang="pug">
 .preloader 
-  p.preloader__text#split-lines
+  p.preloader__text#split-all
     | The surprise of what is possible 
     br
     | to make with a simple 
@@ -12,18 +12,18 @@
 </template>
 
 <script>
-import { splitLines } from '~/assets/js/utils/textSplitting.js'
+import { splitAll } from '~/assets/js/utils/textSplitting.js'
 
 export default {
   mounted() {
 
     this.loader()
 
-    splitLines()
+    splitAll()
 
     this.quoteFlicker()
-    // this.percentIn()
-    this.quoteIn()
+    this.percentIn()
+    this.charIn()
     this.preloaderOut()
     
   },
@@ -43,8 +43,8 @@ export default {
               return _success()
             }
           }
-        }, 30)
-      }, 800)
+        }, 60)
+      }, 1000)
     },
 
     removeElement(element) {
@@ -57,7 +57,7 @@ export default {
     },
 
     quoteFlicker() {
-      this.$gsap.to('#split-lines', { 
+      this.$gsap.to('#split-all', { 
         opacity: 1,
         duration: 0.4,
       })
@@ -71,41 +71,49 @@ export default {
       })
     },
 
-    quoteIn() {
-      this.$gsap.fromTo('.line', {
+    charIn() {
+      this.$gsap.fromTo('.char', {
         y: '100%',        
         opacity: 0
       },
       {
         y: '0%',
         opacity: 1, 
-        duration: 1.4,
-        stagger: 0.1, 
-        ease: 'expo.in'
+        duration: 0.4,
+        stagger: 0.01,
+        delay: 1,
+        ease: {
+          each: "elastic.in(1.5, 1)"
+        }
       })
     },
 
     preloaderOut() {
       const tl = this.$gsap.timeline()
-      tl.to('.line', { 
-          autoAlpha: 0,
+      tl.to('.char', { 
+          opacity: 0,
           y: '-100%', 
-          duration: 1.4,
-          stagger: 0.1, 
+          duration: 0.4,
+          stagger: 0.01, 
           delay: 4, 
-          ease: 'expo.out'
+          ease: {
+          each: "elastic.out(1.5, 1)"
+        }
         })
         .to('.preloader__number', { 
           autoAlpha: 0,
           duration: 1.6,
-          ease: 'expo.out'
-        }, 3.2)
+          ease: 'expo.out',
+          onComplete() {
+            document.querySelector("html").style.overflow = "auto"
+          }
+        }, 5)
         .to('.preloader', { 
           autoAlpha: 0,
           duration: 1.6,
           ease: 'expo.out'
-        }, 5)
-        // .call(this.removeElement('.preloader'))
+        }, 6)
+        .call(this.removeElement('.preloader'))
     },
 
   }

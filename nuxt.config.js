@@ -63,32 +63,15 @@ export default {
     '@nuxt/content',
   ],
 
-  fontLoader: {
-    /* module options */
-    url: '~/assets/styles/base/typography.sass'
-  },
-
   gsap: {
     /* Module Options */
-    registerEffect: [
-      {
-        name: 'slideUpMulti',
-        effect: (targets, config) => {
-        }
-      },
-      {
-        name: 'fadeOut',
-        effect: (targets, config) => {
-          // ...
-        }
-      },
-      {
-        name: 'fadeInOut',
-        effect: (targets, config) => {
-          // ...
-        }
-      }
-    ]
+    extraPlugins: {
+      scrollTrigger: true
+    },
+    clubPlugins: {
+      scrollSmoother: true,
+      splitText: true
+    }
   },
 
   image: {

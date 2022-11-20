@@ -4,6 +4,8 @@
 html
   font-size: calc(100vw / 1920 * 10)
   line-height: 1
+  overflow: hidden
+  overscroll-behavior-y: none
 
   -ms-overflow-style: none
   scrollbar-width: none
@@ -17,6 +19,8 @@ body
   @extend %description-16
 
   font-weight: 300
+  // stop mac from overscolling
+  overscroll-behavior-y: none 
   
 a
   text-decoration: none
