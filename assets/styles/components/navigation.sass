@@ -23,11 +23,32 @@
 .navigation__link__icon 
   display: block
 
-.navigation__list__item
+.navigation__list
   position: absolute
   right: 4rem
   top: 4rem
+  display: flex
+  flex-direction: row
+  column-gap: 2rem
   pointer-events: auto
 
 .navigation__list__link
   @extend %title-20
+  display: inline-block
+  position: relative
+
+  &:after 
+    content: ''
+    position: absolute
+    width: 100%
+    transform: scaleX(0)
+    height: 1px
+    bottom: 0
+    left: 0
+    background-color: $white
+    transform-origin: bottom right
+    transition: transform 0.25s ease-out
+
+  &:hover:after
+    transform: scaleX(1)
+    transform-origin: bottom left

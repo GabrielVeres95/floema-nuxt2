@@ -1,4 +1,4 @@
-<template lang="pug" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px">
+<template lang="pug" preset="general" sizes="sm:50vw lg:600px">
 
 .collections
   .collections__wrapper
@@ -107,116 +107,116 @@
     .collections__gallery
       .collections__gallery__wrapper
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
-          figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="/images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+          figure.collections__gallery__media(v-shared-element:necklace)
+            nuxt-img.collections__gallery__media__image(src="/images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
-            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" format="webp" quality="80" sizes="sm:100vw md:60vw lg:400px")
+            nuxt-img.collections__gallery__media__image(src="images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
 
     .collections__content
       article.collections__article.collections__article--active

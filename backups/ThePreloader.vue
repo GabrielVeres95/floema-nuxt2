@@ -14,10 +14,16 @@
 </template>
 
 <script>
+import { splitAll } from '~/assets/js/utils/textSplitting.js'
+
 export default {
   mounted() {
-    this.preloaderAnimation()
+
+    splitAll()
+    this.init()
+    
     this.loader()
+    
   },
 
   methods: {
@@ -30,12 +36,14 @@ export default {
 				} 
 			}, 1)
     },
-    preloaderAnimation() {
-      const split = new this.$SplitText('#split-all', {type: 'chars, lines, words', linesClass: 'line'})
+
+    init() {
+      
       this.$gsap.set('#split-all', { 
        autoAlpha: 1
       })
-      this.$gsap.fromTo(split.chars, {
+
+      this.$gsap.fromTo('.char', {
         y: '100%',        
         opacity: 0
       },
@@ -47,8 +55,9 @@ export default {
         delay: 1,
         ease: 'back.out(1.25)'
       })
+
       const tl = this.$gsap.timeline()
-      tl.to(split.chars, { 
+      tl.to('.char', { 
           opacity: 0,
           y: '-100%', 
           duration: 0.8,
@@ -71,6 +80,7 @@ export default {
         }, 6)
         .call(this.removeElement('.preloader'))
     },
+
     removeElement(element) {
       if (typeof(element) === "string") {
         element = document.querySelector(element);

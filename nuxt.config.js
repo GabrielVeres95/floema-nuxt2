@@ -61,17 +61,41 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'v-shared-element/nuxt'
   ],
 
   gsap: {
     /* Module Options */
     extraPlugins: {
-      scrollTrigger: true
+      scrollTrigger: true,
+      scrollTo: true
     },
     clubPlugins: {
       scrollSmoother: true,
       splitText: true
-    }
+    },
+    registerEffect: [
+      // {
+      //   name: 'fadeIn',
+      //   effect: (targets, config) => {
+      //     // eslint-disable-next-line no-undef
+      //     return gsap.to(targets, {
+      //       opacity: 0,
+      //       duration: 0.6,
+      //       ease: 'ease.out',
+      //       scrollTrigger: {
+      //         trigger: targets,
+      //         start: '10% center',
+      //         markers: true
+      //       }
+      //     })
+      //   }
+      // },
+    ]
+  },
+
+  router: {
+    saveScrollPosition: false
   },
 
   image: {
@@ -80,16 +104,14 @@ export default {
     // The screen sizes predefined by `@nuxt/image`:
     screens: {
       sm: 640,
-      lg: 1024,
-      xl: 1280
+      lg: 1280,
     },
     presets: {
-      cover: {
+      general: {
         modifiers: {
           fit: "cover",
-          format: "jpg",
-          width: 300,
-          height: 300
+          format: "webp",
+          quality: "80"
         }
       }
     }
@@ -101,5 +123,10 @@ export default {
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    transpile: [
+     "gsap"
+    ]
+  },
+
 }

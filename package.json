@@ -23,6 +23,7 @@
     "pug-plain-loader": "^1.1.0",
     "sass": "^1.55.0",
     "split-type": "^0.3.3",
+    "v-shared-element": "^3.1.0",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"

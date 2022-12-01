@@ -5,9 +5,7 @@ Poate fi folosit pentru integrarea navigatiei si/sau footer -->
   CursorFollower
   ThePreloader
   TheNavigation
-  #smooth-wrapper
-    #smooth-content
-      Nuxt
+  Nuxt
 </template>
 
 <script>
@@ -15,18 +13,15 @@ Poate fi folosit pentru integrarea navigatiei si/sau footer -->
 export default {
 
   mounted() {
-    this.smoothScroll()
+    
   },
 
   methods: {
-    smoothScroll() {
-      // eslint-disable-next-line no-unused-vars
-      const smoother = this.$ScrollSmoother.create({
-      wrapper: '#smooth-wrapper',
-      content: '#smooth-content'
-      })
-    }
-  },
- 
+    
+  }
 }
 </script>
+
+<style>
+
+</style>
