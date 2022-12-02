@@ -64,6 +64,13 @@ export default {
     'v-shared-element/nuxt'
   ],
 
+  vSharedElement: {
+    /* options */
+    ignoreTransparency: true,
+    duration: '0.8s',
+    easeing: 'cubic-bezier(0.83, 0, 0.17, 1)'
+   },
+
   gsap: {
     /* Module Options */
     extraPlugins: {

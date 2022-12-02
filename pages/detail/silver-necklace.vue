@@ -3,7 +3,7 @@
 .detail 
   .detail__wrapper 
   
-    figure.detail__media(v-shared-element:necklace)
+    figure.detail__media(v-shared-element:collection-image="{restrictToRoutes: ['/collections']}")
       nuxt-img.details__media__image(src="/images/products/silver-necklace.png" preset="general" sizes="sm:100vw lg:600px")
     
     .detail__information
@@ -57,7 +57,42 @@
 </template>
 
 <script>
+import $ from 'jquery'
+
   export default {
+
+    transition: {
+    mode: "out-in",
+    css: false,
+
+    enter(el, done) {
+      this.$gsap.timeline()
+      .from(['.detail__information', '.detail__button'], {
+        autoAlpha: 0,
+      })
+    },
+
+    leave(el, done) {
+      if ($(".clicked")[0]){
+        // Do something if class exists
+        return this.$gsap
+        .timeline()
+        .to('.detail', {
+          autoAlpha: 0,
+          onComplete: done
+        })
+      } else {
+        // Do something if class does not exist
+        return this.$gsap
+        .timeline()
+        .to([".detail__information", ".detail__button"], {
+          autoAlpha: 0,
+          onComplete: done
+        })
+      }
+    }
+    },
+  
     head: { // <-- property used by vue-meta to add header tags
       title: 'Titlu pagina', // <-- For our title tag
       meta: [
@@ -68,5 +103,18 @@
         }
       ]
     },
+
+    mounted(){
+      $(document).ready(function() {
+        $('.clicked').removeClass('clicked')
+      })
+      $(".navigation__link").click(function(){
+        $(this).addClass('clicked')
+      })
+      $(".navigation__list__item:nth-of-type(2)").click(function(){
+        $(this).addClass('clicked')
+      })
+    },
+
   }
 </script>

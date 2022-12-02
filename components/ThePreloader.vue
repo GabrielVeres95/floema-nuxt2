@@ -14,6 +14,9 @@
 </template>
 
 <script>
+
+import EventBus from '~/eventBus'
+
 export default {
   mounted() {
     this.preloaderAnimation()
@@ -69,8 +72,12 @@ export default {
           duration: 1.6,
           ease: 'expo.out'
         }, 6)
+        .add(function(){
+          EventBus.$emit('galleryAnimation')
+        }, '<')
         .call(this.removeElement('.preloader'))
     },
+    
     removeElement(element) {
       if (typeof(element) === "string") {
         element = document.querySelector(element);

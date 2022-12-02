@@ -1,4 +1,4 @@
-<template lang="pug" preset="general" sizes="sm:50vw lg:600px">
+<template lang="pug">
 
 .home 
   .home__wrapper 
@@ -74,7 +74,33 @@
 
 
 <script>
+import EventBus from '../eventBus'
+
   export default {
+
+    transition: {
+    css: false,
+    mode: "out-in",
+    enter(el, done) {
+      this.$gsap.timeline()
+      .from('.home', {
+        autoAlpha: 0,
+      })
+      .from('.home__wrapper', {
+        autoAlpha: 0,
+        duration: 1.2
+      })
+    },
+    leave(el, done) {
+      return this.$gsap
+        .timeline()
+        .to(".home", {
+          autoAlpha: 0,
+          onComplete: done
+        })
+      }
+    },
+
     head: { // <-- property used by vue-meta to add header tags
       title: 'Titlu pagina', // <-- For our title tag
       meta: [
@@ -85,5 +111,15 @@
         }
       ]
     },
+
+    mounted() {
+      EventBus.$on('galleryAnimation', () => {
+        this.$gsap.to('.home__link__icon', { 
+        duration: 2, 
+        scale: 2
+        })
+      })
+    },
+ 
   }
 </script>

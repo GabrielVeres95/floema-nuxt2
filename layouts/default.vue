@@ -11,14 +11,15 @@ Poate fi folosit pentru integrarea navigatiei si/sau footer -->
 <script>
 
 export default {
-
+  
   mounted() {
     
   },
-
+  
   methods: {
     
-  }
+  },
+  
 }
 </script>
 

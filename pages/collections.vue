@@ -1,4 +1,4 @@
-<template lang="pug" preset="general" sizes="sm:50vw lg:600px">
+<template lang="pug">
 
 .collections
   .collections__wrapper
@@ -107,7 +107,7 @@
     .collections__gallery
       .collections__gallery__wrapper
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
-          figure.collections__gallery__media(v-shared-element:necklace)
+          figure.collections__gallery__media(v-shared-element:collection-image="{restrictToRoutes: ['/detail/silver-necklace']}")
             nuxt-img.collections__gallery__media__image(src="/images/products/silver-necklace.png" preset="general" sizes="sm:50vw lg:600px")
         NuxtLink.collections__gallery__link(to="/detail/silver-necklace")
           figure.collections__gallery__media
@@ -261,16 +261,68 @@
 </template>
 
 <script>
+import $ from 'jquery'
+
 export default {
-    head: { // <-- property used by vue-meta to add header tags
-      title: 'Titlu pagina', // <-- For our title tag
-      meta: [
-        {
-          hid: 'description',  
-          name: 'description', // <-- for our meta description tag
-          content: 'Where you can find all the events taking place in your neighborhood'
-        }
-      ]
+
+  transition: {
+    mode: "out-in",
+    css: false,
+
+    enter(el, done) {
+      this.$gsap.timeline()
+      .from('.collections', {
+        autoAlpha: 0,
+        duration: 1.2
+      })
     },
+
+    leave(el, done) {
+      if ($(".clicked")[0]){
+        // Do something if class exists
+        return this.$gsap
+        .timeline()
+        .to($('.collections__gallery__media').not('.clicked'), {
+          autoAlpha: 0,
+        })
+        .to(['.collections__titles', '.collections__content'], {
+          autoAlpha: 0,
+          onComplete: done
+        }, 0)
+      } else {
+        // Do something if class does not exist
+        return this.$gsap
+        .timeline()
+        .to(".collections", {
+          autoAlpha: 0,
+          onComplete: done
+        })
+      }
+    }
+  },
+
+  head: { // <-- property used by vue-meta to add header tags
+    title: 'Titlu pagina', // <-- For our title tag
+    meta: [
+      {
+        hid: 'description',  
+        name: 'description', // <-- for our meta description tag
+        content: 'Where you can find all the events taking place in your neighborhood'
+      }
+    ]
+  },
+
+  mounted(){
+    $(document).ready(function() {
+      $('.clicked').removeClass('clicked')
+    })
+    $(".collections__gallery__media").click(function(){
+      $(this).addClass('clicked')
+    })
+  },
+
+  methods: {
+    
   }
+}
 </script>
