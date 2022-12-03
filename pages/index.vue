@@ -117,7 +117,7 @@ import EventBus from '../eventBus'
       EventBus.$on('galleryAnimation', () => {
         this.$gsap.to('.home__link__icon', { 
         duration: 2, 
-        scale: 2
+        scale: 1
         })
       })
     },

@@ -11,6 +11,7 @@ export default {
     },
 
     meta: [
+      { name: 'viewport', content: 'width=device-width,initial-scale=1.0' },
       // https://realfavicongenerator.net/
       { name: 'msapplication-TileColor', content: '#f4d8cc' },
       { name: 'theme-color', content: '#f4d8cc' },
@@ -38,9 +39,10 @@ export default {
   
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    "~/assets/styles/global.sass"
-  ],
+  css: ["~/assets/styles/global.sass"],
+    styleResources: {
+      sass: ["~/assets/styles/global.sass"]
+    },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
