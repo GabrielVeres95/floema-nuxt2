@@ -69,6 +69,7 @@ import $ from 'jquery'
       this.$gsap.timeline()
       .from(['.detail__information', '.detail__button'], {
         autoAlpha: 0,
+        duration: 0.8,
       })
     },
 
@@ -79,6 +80,7 @@ import $ from 'jquery'
         .timeline()
         .to('.detail', {
           autoAlpha: 0,
+          duration: 0.8,
           onComplete: done
         })
       } else {

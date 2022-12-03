@@ -88,7 +88,7 @@ import EventBus from '../eventBus'
       })
       .from('.home__wrapper', {
         autoAlpha: 0,
-        duration: 1.2
+        duration: 0.8
       })
     },
     leave(el, done) {
@@ -96,6 +96,7 @@ import EventBus from '../eventBus'
         .timeline()
         .to(".home", {
           autoAlpha: 0,
+          duration: 0.8,
           onComplete: done
         })
       }

@@ -216,7 +216,7 @@ export default {
       this.$gsap.timeline()
         .from('.about', {
           autoAlpha: 0,
-          duration: 1.2
+          duration: 0.8
         })
         .from('.about__gallery__media', {
           autoAlpha: 0,
@@ -258,6 +258,7 @@ export default {
         .timeline()
         .to(".about", {
           autoAlpha: 0,
+          duration: 0.8,
           onComplete: done
         })
       }

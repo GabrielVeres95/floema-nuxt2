@@ -273,7 +273,7 @@ export default {
       this.$gsap.timeline()
       .from('.collections', {
         autoAlpha: 0,
-        duration: 1.2
+        duration: 0.8
       })
     },
 
@@ -295,6 +295,7 @@ export default {
         .timeline()
         .to(".collections", {
           autoAlpha: 0,
+          duration: 0.8,
           onComplete: done
         })
       }
