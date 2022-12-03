@@ -13,6 +13,7 @@
     "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix"
   },
   "dependencies": {
+    "@gsap/shockingly": "^3.11.3",
     "@nuxt/content": "^1.0.0",
     "core-js": "^3.25.3",
     "gsap": "npm:@gsap/shockingly@^3.11.3",
