@@ -4,45 +4,8 @@
   .about__wrapper 
 
     section.about__gallery 
-      .about__gallery__wrapper 
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/1.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/2.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/3.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/4.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/5.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/6.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/7.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/8.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/9.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/10.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/11.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/12.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/13.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/14.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/15.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/16.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/17.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/18.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/19.jpg" preset="general" sizes="sm:50vw lg:400px")
+
+      AboutGallery
 
     h2.about__title.transition-in
       | Creating new dialogues
@@ -96,45 +59,8 @@
             nuxt-img.about__content__media__image(alt="" src="/images/about/4.jpg" preset="general" sizes="sm:100vw lg:50vw")
 
     section.about__gallery 
-      .about__gallery__wrapper 
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/1.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/2.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/3.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/4.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/5.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/6.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/7.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/8.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/9.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/10.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/11.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/12.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/a.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/b.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/c.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/d.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/e.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/f.jpg" preset="general" sizes="sm:50vw lg:400px")
-        figure.about__gallery__media
-          nuxt-img.about__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/posters/g.jpg" preset="general" sizes="sm:50vw lg:400px")
+      
+      AboutPosters
 
     h2.about__title.fade-in
       | The surprise of what is possible

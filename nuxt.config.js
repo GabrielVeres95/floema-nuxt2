@@ -20,6 +20,7 @@ export default {
       { name: 'og:title', content: 'Floema' },
       { name: 'og:description', content: 'Descriere website' },
       { name: 'og:image', content: 'Imagine reprezentativa' }
+      // testate aici dupa modificari https://www.heymeta.com/
     ],
 
     link: [

@@ -26,43 +26,7 @@
           .home__titles__title
             .home__titles__title__text Vita
 
-    .home__gallery
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/1.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/2.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/3.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/4.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/5.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/6.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/7.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/8.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/9.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/10.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/11.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/12.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/13.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/14.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/15.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/16.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/17.jpg" preset="general" sizes="sm:50vw lg:600px")
-      figure.home__gallery__media
-        nuxt-img.home__gallery__media__image(src="/images/gallery/18.jpg" preset="general" sizes="sm:50vw lg:600px")
+    HomeGallery
 
     NuxtLink.home__link(to="/collections")
         span.home__link__text Discover collections
