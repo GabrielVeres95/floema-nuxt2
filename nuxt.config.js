@@ -58,13 +58,13 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxt/image',
     'nuxt-gsap-module',
-    'nuxt-font-loader'
+    'nuxt-font-loader',
+    '@nuxtjs/prismic'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
-    '@nuxt/content',
     'v-shared-element/nuxt'
   ],
 
@@ -74,6 +74,20 @@ export default {
     duration: '0.8s',
     easeing: 'cubic-bezier(0.83, 0, 0.17, 1)'
    },
+
+   prismic: {
+    endpoint: "https://floema-humanist.prismic.io/api/v2",
+    modern: true,
+    /* see configuration for more */
+    apiOptions: {
+      routes: [
+        {
+          type: 'product',
+          path: '/detail/:uid',
+        },
+      ],
+    },
+  },
 
   gsap: {
     /* Module Options */
@@ -136,7 +150,8 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [
-     "gsap"
+     "gsap",
+    //  "@prismicio/vue"
     ]
   },
 
