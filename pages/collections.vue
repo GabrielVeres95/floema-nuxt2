@@ -107,9 +107,25 @@
     .collections__gallery
       .collections__gallery__wrapper
        
-        NuxtLink.collections__gallery__link(v-for="product in products" :key="product.id" :to="product.url")
-          figure.collections__gallery__media(v-shared-element:[product.uid])
-            prismic-image.collections__gallery__media__image(:field="product.data.product_image")
+       .aria__collection
+          NuxtLink.collections__gallery__link(v-for="aria in arias" :key="aria.id" :to="aria.url")
+            figure.collections__gallery__media(v-shared-element:[aria.uid])
+              prismic-image.collections__gallery__media__image(:field="aria.data.product_image")
+
+       .onde__collection
+          NuxtLink.collections__gallery__link(v-for="onde in ondes" :key="onde.id" :to="onde.url")
+            figure.collections__gallery__media(v-shared-element:[onde.uid])
+              prismic-image.collections__gallery__media__image(:field="onde.data.product_image")
+
+       .vita__collection
+          NuxtLink.collections__gallery__link(v-for="vita in vitas" :key="vita.id" :to="vita.url")
+            figure.collections__gallery__media(v-shared-element:[vita.uid])
+              prismic-image.collections__gallery__media__image(:field="vita.data.product_image")
+
+       .treccia__collection
+          NuxtLink.collections__gallery__link(v-for="treccia in treccias" :key="treccia.id" :to="treccia.url")
+            figure.collections__gallery__media(v-shared-element:[treccia.uid])
+              prismic-image.collections__gallery__media__image(:field="treccia.data.product_image")
        
     .collections__content
       article.collections__article.collections__article--active
@@ -196,14 +212,21 @@ export default {
   },
  
   async asyncData({ $prismic, params, error }) {
-    const products = await $prismic.api.query(
-      $prismic.predicates.at('document.type','product')
-    )
-    if (products) {
-      return { products: products.results }
-    } else {
-      error({ statusCode: 404, message: 'Page not found' })
-    }
+    const arias = await $prismic.api.query(
+      $prismic.predicates.at('document.tags',['aria']))
+    const ondes = await $prismic.api.query(
+      $prismic.predicates.at('document.tags',['onde']))
+    const vitas = await $prismic.api.query(
+      $prismic.predicates.at('document.tags',['vita']))
+    const treccias = await $prismic.api.query(
+      $prismic.predicates.at('document.tags',['treccia']))
+    
+      return { 
+        arias: arias.results,
+        ondes: ondes.results,
+        vitas: vitas.results,
+        treccias: treccias.results,
+      }
   },
 
   head: { // <-- property used by vue-meta to add header tags

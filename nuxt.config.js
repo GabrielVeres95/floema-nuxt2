@@ -58,7 +58,6 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxt/image',
     'nuxt-gsap-module',
-    'nuxt-font-loader',
     '@nuxtjs/prismic'
   ],
 

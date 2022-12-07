@@ -1,6 +1,6 @@
 <template lang="pug">
 .about__gallery__wrapper
-  figure.about__gallery__media(v-for='image in images' :key='image.id')
+  figure.about__gallery__media(v-for='image in images' :key='image.src')
     nuxt-img.about__gallery__media__image(:alt="image.alt" :src="image.src" :preset="image.preset" :sizes="image.sizes")
 </template>
 

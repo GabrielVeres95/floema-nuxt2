@@ -120,5 +120,9 @@ import $ from 'jquery'
       })
     },
 
+    methods: {
+    
+    }
+
   }
 </script>
