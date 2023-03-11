@@ -26,7 +26,26 @@
           .home__titles__title
             .home__titles__title__text Vita
 
-    HomeGallery
+    .home__gallery
+      figure.home__gallery__media
+        img.home__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/1.jpg" preset="general" sizes="sm:50vw lg:400px") 
+      figure.home__gallery__media
+        img.home__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/2.jpg" preset="general" sizes="sm:50vw lg:400px") 
+      figure.home__gallery__media
+        img.home__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/3.jpg" preset="general" sizes="sm:50vw lg:400px") 
+      figure.home__gallery__media
+        img.home__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/4.jpg" preset="general" sizes="sm:50vw lg:400px") 
+      figure.home__gallery__media
+        img.home__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/5.jpg" preset="general" sizes="sm:50vw lg:400px") 
+      figure.home__gallery__media
+        img.home__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/6.jpg" preset="general" sizes="sm:50vw lg:400px") 
+      figure.home__gallery__media
+        img.home__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/7.jpg" preset="general" sizes="sm:50vw lg:400px") 
+      figure.home__gallery__media
+        img.home__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/8.jpg" preset="general" sizes="sm:50vw lg:400px") 
+      figure.home__gallery__media
+        img.home__gallery__media__image(alt="Floema Jwelery Gallery" src="/images/gallery/9.jpg" preset="general" sizes="sm:50vw lg:400px") 
+     
 
     NuxtLink.home__link(to="/collections")
         span.home__link__text Discover collections
@@ -36,55 +55,57 @@
 
 </template>
 
-
 <script>
 import EventBus from '../eventBus'
+import { App } from '~/assets/webgl/index/HomeGallery'
 
-  export default {
-
-    transition: {
+export default {
+  transition: {
     css: false,
-    mode: "out-in",
+    mode: 'out-in',
     enter(el, done) {
-      this.$gsap.timeline()
-      .from('.home', {
-        autoAlpha: 0,
-      })
-      .from('.home__wrapper', {
-        autoAlpha: 0,
-        duration: 0.8
-      })
-    },
-    leave(el, done) {
-      return this.$gsap
+      this.$gsap
         .timeline()
-        .to(".home", {
+        .from('.home', {
+          autoAlpha: 0,
+        })
+        .from('.home__wrapper', {
           autoAlpha: 0,
           duration: 0.8,
-          onComplete: done
         })
-      }
     },
-
-    head: { // <-- property used by vue-meta to add header tags
-      title: 'Titlu pagina', // <-- For our title tag
-      meta: [
-        {
-          hid: 'description',  
-          name: 'description', // <-- for our meta description tag
-          content: 'Where you can find all the events taking place in your neighborhood'
-        }
-      ]
-    },
-
-    mounted() {
-      EventBus.$on('galleryAnimation', () => {
-        this.$gsap.to('.home__link__icon', { 
-        duration: 2, 
-        scale: 1
-        })
+    leave(el, done) {
+      return this.$gsap.timeline().to('.home', {
+        autoAlpha: 0,
+        duration: 0.8,
+        onComplete: done,
       })
     },
- 
-  }
+  },
+
+  head: {
+    // <-- property used by vue-meta to add header tags
+    title: 'Titlu pagina', // <-- For our title tag
+    meta: [
+      {
+        hid: 'description',
+        name: 'description', // <-- for our meta description tag
+        content:
+          'Where you can find all the events taking place in your neighborhood',
+      },
+    ],
+  },
+
+  mounted() {
+    EventBus.$on('galleryAnimation', () => {
+      this.$gsap.to('.home__link__icon', {
+        duration: 2,
+        scale: 1,
+      })
+    })
+
+    // eslint-disable-next-line no-new, no-unused-vars
+    const homeGallery = new App()
+  },
+}
 </script>

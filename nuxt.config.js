@@ -150,8 +150,19 @@ export default {
   build: {
     transpile: [
      "gsap",
+     "ogl-nuxt",
+     "GLTFLoader",
+     "normalize-wheel",
     //  "@prismicio/vue"
-    ]
+    ],
+    extend(config, ctx) {
+      if (config.module) {
+        config.module.rules.push({
+          test: /\.(glsl)$/i,
+          use: ['raw-loader'],
+        })
+      }
+    },
   },
 
 }

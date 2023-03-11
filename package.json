@@ -19,7 +19,11 @@
     "core-js": "^3.25.3",
     "gsap": "npm:@gsap/shockingly@^3.11.3",
     "jquery": "^3.6.1",
+    "mouse-follower": "^1.1.2",
+    "normalize-wheel": "^1.0.1",
     "nuxt": "^2.15.8",
+    "ogl": "^0.0.108",
+    "ogl-nuxt": "^0.0.2",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
     "sass": "^1.55.0",
@@ -40,6 +44,7 @@
     "eslint-plugin-vue": "^9.5.1",
     "nuxt-gsap-module": "^1.7.2",
     "prettier": "^2.7.1",
+    "raw-loader": "^4.0.2",
     "sass-loader": "^10.4.1",
     "webpack": "^4.46.0"
   }
